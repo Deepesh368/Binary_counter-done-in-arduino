@@ -1,0 +1,54 @@
+int a=1,b,c,d,e,f,g,h;
+void setup()
+{
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
+}
+void loop()
+{
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  b=a%2;
+  c=a/2;
+  d=c%2;
+  e=c/2;
+  f=e%2;
+  g=e/2;
+  h=g%2;
+  if(b==1)
+  {
+    digitalWrite(9, HIGH);
+    
+    
+  }
+  if(d==1)
+  {
+    digitalWrite(10, HIGH);
+    
+   
+  }
+  if(f==1)
+  {
+    digitalWrite(11, HIGH);
+    
+    
+  }
+  if(h==1)
+  {
+    digitalWrite(12, HIGH);
+    
+    
+  }
+  if(a==15)
+  {
+    a=0;
+  }
+  a=a+1;
+  delay(1000);
+  
+}
+  
